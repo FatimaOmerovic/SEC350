@@ -60,7 +60,7 @@ firewall {
         }
         rule 30 {
             action accept
-            description "Allolw SSH from LAN to DMZ"
+            description "Allow SSH from LAN to DMZ"
             destination {
                 port 22
             }
@@ -120,17 +120,14 @@ interfaces {
     ethernet eth0 {
         address 10.0.17.127/24
         description SEC350-WAN
-        hw-id 00:50:56:a1:14:cf
     }
     ethernet eth1 {
         address 172.16.50.2/29
         description FATIMA-DMZ
-        hw-id 00:50:56:a1:b3:9c
     }
     ethernet eth2 {
         address 172.16.150.2/24
         description FATIMA-LAN
-        hw-id 00:50:56:a1:54:8d
     }
     loopback lo {
     }
